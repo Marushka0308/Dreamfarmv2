@@ -32,9 +32,9 @@ def get_gemini_response(question):
 
 ##initialize our streamlit app
 
-st.set_page_config(page_title="Q&A Demo")
+st.set_page_config(page_title="Demo")
 
-st.header("Gemini Application")
+st.header("Facility prediction")
 
 input=st.text_input("Input: ",key="input")
 
