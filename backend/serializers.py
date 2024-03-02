@@ -16,9 +16,9 @@ class UserPostSerializer(serializers.ModelSerializer):
 class CommentSerializer(serializers.ModelSerializer):
     class Meta:
         model = Comments
-        fields = ['username','description','likes','post_id']
+        fields = ['username','description','likes']
 
 class Market_ProdSerializer(serializers.ModelSerializer):
     class Meta:
         model = Market_prod
-        fields = ['title','img','price','description','owner','type']
+        fields = ['title','img','price','description','duration','type']

@@ -24,7 +24,7 @@ class Comments(models.Model):
     username = models.ForeignKey(User, on_delete = models.CASCADE)
     description = models.TextField()
     likes = models.IntegerField()
-    post_id = models.ForeignKey(UserPost, on_delete = models.CASCADE)
+    
 
     def __str__(self):
         return self.username
@@ -34,7 +34,7 @@ class Market_prod(models.Model):
     img = models.URLField()
     price = models.IntegerField()
     description = models.TextField()
-    owner = models.ForeignKey(User, on_delete = models.CASCADE)
+    duration = models.IntegerField()
     type = models.CharField(max_length = 255) #Renting or buying
 
 
